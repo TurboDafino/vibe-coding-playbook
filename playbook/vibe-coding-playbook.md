@@ -136,8 +136,9 @@
 ## 六、两台电脑同步手册
 
 > **适用场景**：在两台电脑间交替开发，没有网络仓库，靠文件传输同步。
-> **现成脚本**：[templates/sync/sync-out.sh](../templates/sync/sync-out.sh)（发送端）、[templates/sync/sync-in.sh](../templates/sync/sync-in.sh)（接收端），Windows 下用 Git Bash 运行。
+> **现成脚本**：[templates/sync/sync-out.sh](../templates/sync/sync-out.sh)（发送端，打包后自动执行"下班三件事"收尾）、[templates/sync/sync-in.sh](../templates/sync/sync-in.sh)（接收端），Windows 下用 Git Bash 运行。
 > 本章偏技术，可直接交给 AI 执行，你需要理解的是**为什么这样设计**。
+> **合规提醒**：本方案仅适用于个人项目或单位明确允许的远程开发场景。涉及公司资产时，请遵守保密与数据安全规定，勿经个人聊天工具传输；远程开发请用单位批准通道（VPN、云桌面、内部仓库）。
 
 ### 思路：寄包裹，而不是搬整个仓库
 
