@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.3.1 · 2026-07-24
+
+- case-study 3.2 修正"13 步 / 14 快照"表述矛盾（协议 13 步 + 施工追加 1 步）
+
 ## v1.3.0 · 2026-07-24
 
 - 新增 templates/functional_requirements_template.md（需求写到 AI 可执行深度的骨架 + 字段注解 + 填好的示例）
