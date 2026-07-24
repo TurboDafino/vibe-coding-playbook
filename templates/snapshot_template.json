@@ -1,0 +1,19 @@
+{
+  "step": "N",
+  "status": "passed",
+  "finished_at": "YYYY-MM-DD hh:mm:ss（用系统 date 命令取真实时间）",
+  "human_readable_summary": "人话总结：这一步做了什么、关键结论、注意事项（新会话靠这段话恢复上下文）",
+  "checks": {
+    "passed": 0,
+    "total": 0
+  },
+  "deliverables": [
+    "本步产出的关键文件/功能清单"
+  ],
+  "key_data": {
+    "备注": "与本步相关的关键数据，如记录数、配置项等"
+  },
+  "known_issues": [
+    "本步遗留的已知问题，没有则留空数组"
+  ]
+}
