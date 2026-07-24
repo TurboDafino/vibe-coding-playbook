@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.3.0 · 2026-07-24
+
+- 新增 templates/functional_requirements_template.md（需求写到 AI 可执行深度的骨架 + 字段注解 + 填好的示例）
+- 新增 templates/project_spec_template.md（项目全貌与目录锚骨架）
+- README 新增"四份核心文件怎么配合"一节（spec/FR/协议/指南分层图）
+
 ## v1.2.2 · 2026-07-24
 
 - case-study 4.5 补多模型分工起源（07-10 双 session 并行、调研用免费模型省额度）

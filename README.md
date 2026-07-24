@@ -27,6 +27,27 @@
 | 5 | **验收看真东西** | 页面打开看一眼、数据查一下，别只听 AI 汇报"成功了" |
 | 6 | **下班前三件事** | 关程序、清临时文件、清缓存。AI 不会自己"下班收拾工位"，要明文规定 |
 
+## 四份核心文件怎么配合
+
+AI 协作的"基础设施"就是四份 Markdown，各管一层、缺一不可：
+
+```
+project_spec.md            项目全貌与目录锚 ── 做什么系统、文件该放哪
+      │
+functional_requirements.md 功能需求 ──────── 每个功能做到什么深度算完
+      │
+EXECUTION_PROTOCOL.md      执行协议 ──────── 一步步怎么施工、怎么验收
+      │
+development_guidelines.md  开发规范 ──────── 红线与检查（事故驱动，持续追加）
+```
+
+- **spec 是地图**：技术栈、端口、目录树（每个文件注职责）。防路径漂移、防擅自换栈
+- **FR 是图纸**：需求写到"AI 可直接执行"的深度——Trigger 精确到按钮、去重策略、响应结构、验收方式
+- **协议是工序**：把项目拆成 Step，每步"做什么、做到什么样算完"，不许跳步
+- **指南是护栏**：每条红线都来自真实事故，能自动检查的就写进脚本
+
+新开 AI 对话时，它按 NEW_SESSION_BRIEF.md 的指引读这几份文件，两分钟就能"上岗"。
+
 ## 仓库地图
 
 | 位置 | 内容 | 适合谁 |
@@ -34,6 +55,8 @@
 | [playbook/vibe-coding-playbook.md](playbook/vibe-coding-playbook.md) | **完整操作手册**：十条红线、交接班模板、收尾 SOP、验收清单、多端同步 | 所有人，主文档 |
 | [case-study/project-retrospective.md](case-study/project-retrospective.md) | **脱敏复盘全文**：踩坑实录、制度演进、架构迭代 | 想了解来龙去脉的人 |
 | [templates/NEW_SESSION_BRIEF.md](templates/NEW_SESSION_BRIEF.md) | 交接班文件模板 | 马上开工的人 |
+| [templates/project_spec_template.md](templates/project_spec_template.md) | 项目规格骨架（技术栈约束 + 目录锚） | 马上开工的人 |
+| [templates/functional_requirements_template.md](templates/functional_requirements_template.md) | 功能需求骨架（需求写到 AI 可执行的深度） | 马上开工的人 |
 | [templates/EXECUTION_PROTOCOL.md](templates/EXECUTION_PROTOCOL.md) | 施工图纸（执行协议）模板 | 马上开工的人 |
 | [templates/development_guidelines.md](templates/development_guidelines.md) | 规范文件骨架（十条红线已预填） | 马上开工的人 |
 | [templates/snapshot_template.json](templates/snapshot_template.json) | 完工快照格式 | 配套使用 |
@@ -43,9 +66,10 @@
 ## 快速开始（5 分钟）
 
 1. 把 `templates/NEW_SESSION_BRIEF.md` 复制到你的项目根目录
-2. 把 `templates/development_guidelines.md` 复制过去——十条红线已预填，之后每踩一个坑按格式追加
-3. 把 `templates/EXECUTION_PROTOCOL.md` 复制过去，和 AI 一起把你的项目拆成 Step 填进表里
-4. 每次新开 AI 对话，第一句话：**"先读 NEW_SESSION_BRIEF.md，按流程来。"**
+2. 把 `templates/project_spec_template.md` 和 `templates/functional_requirements_template.md` 复制到 `docs/specs/`，和 AI 一起按骨架填上你的项目内容——前者填一次很少改，后者随功能开发持续追加
+3. 把 `templates/development_guidelines.md` 复制过去——十条红线已预填，之后每踩一个坑按格式追加
+4. 把 `templates/EXECUTION_PROTOCOL.md` 复制过去，和 AI 一起把你的项目拆成 Step 填进表里
+5. 每次新开 AI 对话，第一句话：**"先读 NEW_SESSION_BRIEF.md，按流程来。"**
 
 ## 适用人群
 
